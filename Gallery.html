@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - AE Laboratories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="openSidebar()">&#9776;</div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="About Us.html">About Us</a>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Our Work in Pictures</h1>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="Transport1.jpg" alt="Lab Image 1" />
+      <img src="Transport2.jpg" alt="Lab Image 2" />
+      <img src="Lab3.jpg" alt="Lab Image 3" />
+      <img src="bckgrnd.jpg" alt="Lab Image 4" />
+      <img src="Lab1.jpg" alt="Lab Image 4" />
+      <img src="Lab2.jpg" alt="Lab Image 4" />
+      <!-- Add more images here -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section contact-info">
+      <h4>Contact Us</h4>
+      <p><img src="phone.jpeg" alt="Phone" class="footer-icon"> +263 782561889 / 0718279891</p>
+      <p><img src="whatsapp.png" alt="WhatsApp" class="footer-icon"> 
+        <a href="https://wa.me/263718279891" target="_blank">Chat on WhatsApp</a>
+      </p>
+      <p><img src="email.png" alt="Email" class="footer-icon"> 
+        <a href="ae.laboratories@gmail.com">info@aelaboratories.com</a>
+      </p>
+      <p><img src="location.png" alt="Location" class="footer-icon"> 
+        191 Fairhome Toronto, Mutare, Zimbabwe
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AE Laboratories. All rights reserved.</p>
+    <p><em>Website By: ZeinarTech</em>
+       <div class="sociol-link">
+        <a href="https://www.facebook.com/el_qundor" target="_blank"><img style="height: 1rem;width:1rem;" src="facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/el_qundor" target="_blank"><img style="height: 1rem;width:1rem;" src="instagram.png" alt="instagram"></a>
+         <a href="https://www.tiktok.com/el_qundor"target="_blank"><img style="height: 1rem;width:1rem;" src="tiktok.png" alt="tiktok"></a>
+      </div>
+     <div class="footer-section social-links"></div>
+  </div>
+</footer>
+
+  <script>
+    function openSidebar() {
+      document.getElementById("sidebar").style.left = "0";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeSidebar() {
+      document.getElementById("sidebar").style.left = "-250px";
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    document.querySelectorAll('#sidebar nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeSidebar();
+      });
+    });
+  </script>
+
+</body>
+</html>

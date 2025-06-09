@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - AE Laboratories</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="openSidebar()">&#9776;</div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="About Us.html">About Us</a>
+    </nav>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- Hero Heading Section -->
+  <div class="hero-section about-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>ABOUT AE LABORATORIES</h1>
+    </div>
+  </div>
+
+  <!-- About Content Section -->
+  <section class="about-content">
+       <h2>VISION</h2>
+    <p>
+To be  the premier mineral processing facility, delivering superior quality products and services to our customers,while prioritizing sustainability and community development.
+    </p>
+
+  <h2>MISSION</h2>
+    <p>
+To efficiently ad responsibly precess mineral ore into high-value products that meet the evolving needs of our customers, while fostering a culture of innovation,safety, and environmental stewardship.
+    </p>
+    <h2>Who We Are</h2>
+    <p>
+      AE Laboratories is a modern metallurgical and mining support lab committed to providing
+      professional, efficient, and affordable services to miners and industry players across
+      Zimbabwe and the region.
+    </p>
+
+    <h2>What We Do</h2>
+    <ul>
+      <li>Gold ore sampling and analysis</li>
+      <li>Ore transport and logistics to milling plants</li>
+      <li>Short professional training courses in mining, accounting, and public relations</li>
+      <li>Tailored consulting for small-scale miners</li>
+    </ul>
+
+    <h2>Why Choose Us</h2>
+    <p>
+      We combine technical expertise with real-world experience to deliver actionable results.
+      Our team is dedicated to quality service, safety, and innovation.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section contact-info">
+      <h4>Contact Us</h4>
+      <p><img src="phone.jpeg" alt="Phone" class="footer-icon"> +263 782561889 / 0718279891</p>
+      <p><img src="whatsapp.png" alt="WhatsApp" class="footer-icon"> 
+        <a href="https://wa.me/263718279891" target="_blank">Chat on WhatsApp</a>
+      </p>
+      <p><img src="email.png" alt="Email" class="footer-icon"> 
+        <a href="ae.laboratories@gmail.com">info@aelaboratories.com</a>
+      </p>
+      <p><img src="location.png" alt="Location" class="footer-icon"> 
+        191 Fairhome Toronto, Mutare, Zimbabwe
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AE Laboratories. All rights reserved.</p>
+    <p><em>Website By: ZeinarTech</em>
+       <div class="sociol-link">
+        <a href="https://www.facebook.com/el_qundor" target="_blank"><img style="height: 1rem;width:1rem;" src="facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/el_qundor" target="_blank"><img style="height: 1rem;width:1rem;" src="instagram.png" alt="instagram"></a>
+         <a href="https://www.tiktok.com/el_qundor"target="_blank"><img style="height: 1rem;width:1rem;" src="tiktok.png" alt="tiktok"></a>
+      </div>
+     <div class="footer-section social-links"></div>
+  </div>
+</footer>
+
+  <!-- Sidebar Script -->
+  <script>
+    function openSidebar() {
+      document.getElementById("sidebar").style.left = "0";
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function closeSidebar() {
+      document.getElementById("sidebar").style.left = "-250px";
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    document.querySelectorAll('#sidebar nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeSidebar();
+      });
+    });
+  </script>
+
+</body>
+</html>
